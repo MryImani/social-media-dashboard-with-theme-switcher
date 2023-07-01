@@ -8,8 +8,8 @@ export default function Header(props){
       <header
         className={
           theme === "dark"
-            ? "px-48 pt-12 pb-48 bg-gray-dark flex justify-between items-center"
-            : "px-48 pt-12 pb-48 bg-light-header flex justify-between items-center"
+            ? "px-48 pt-8 pb-48 bg-gray-dark flex justify-between items-center"
+            : "px-48 pt-8 pb-48 bg-light-header flex justify-between items-center"
         }
       >
         <div>
