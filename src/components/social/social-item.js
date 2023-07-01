@@ -1,15 +1,33 @@
 import  './item.css'
 export default function SocialItem(props){
-    const {item} = props;
+    const { item, theme } = props;
     return (
       <div
-        className={`${item.name} flex flex-col items-center justify-evenly bg-light-item rounded-md py-8 px-16 `}
+        className={
+          theme === "dark"
+            ? `${item.name} flex flex-col items-center justify-evenly bg-dark-item rounded-md py-8 px-16 `
+            : `${item.name} flex flex-col items-center justify-evenly bg-light-item rounded-md py-8 px-16 `
+        }
       >
         <div className="flex items-center">
           <img className="mr-2" src={item.icon} alt={item.name} />
-          <span>{item.username}</span>
+          <span
+            className={
+              theme === "dark"
+                ? "text-gray-light-2 font-semibold"
+                : "text-gray-2 font-semibold"
+            }
+          >
+            {item.username}
+          </span>
         </div>
-        <p className=" font-bold font-inter text-6xl mt-8">
+        <p
+          className={
+            theme === "dark"
+              ? " font-bold font-inter text-6xl mt-8 text-white"
+              : " font-bold font-inter text-6xl mt-8"
+          }
+        >
           {item.numberOfFollowers}
         </p>
         <p className="text-sm uppercase text-light-text tracking-widest mb-8">

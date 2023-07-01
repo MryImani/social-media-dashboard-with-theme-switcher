@@ -1,7 +1,16 @@
+import { useState } from "react";
 import OverviewList from "../overview/overview-list";
 import SocialList from "../social/socialList";
+import Header from "../../components/ui/Header";
 
 export default function Main(props) {
+      const [theme, setTheme] = useState("dark");
+      const setLightTheme = () => {
+        setTheme("light");
+      };
+      const setDarkTheme = () => {
+        setTheme("dark");
+      };
   const socialList = [
     {
       name: "facebook",
@@ -120,9 +129,16 @@ export default function Main(props) {
     },
   ];
   return (
-    <div className="px-48">
-      <SocialList items={socialList} />
-      <OverviewList items={overviewList} />
+    <div>
+      <Header
+        setDarkTheme={setDarkTheme}
+        setLightTheme={setLightTheme}
+        theme={theme}
+      />
+      <div className={theme === "dark" ? "bg-dark-bg px-48 pb-12" : "px-48 pb-12 md:relative"}>
+        <SocialList items={socialList} theme={theme} />
+        <OverviewList items={overviewList} theme={theme} />
+      </div>
     </div>
   );
 }
