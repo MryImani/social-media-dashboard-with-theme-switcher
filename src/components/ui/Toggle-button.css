@@ -1,0 +1,12 @@
+.bg{
+     background-image: linear-gradient(to right, #498bbf , #3cc1a4);
+}
+
+input:checked ~ .dot {
+  transform: translateX(100%);
+  background-color:#f8f9fe;
+}
+
+input:checked ~ .bg {
+   background-image:linear-gradient(to right, #aeb2cb , #aeb2cb);
+}

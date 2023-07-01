@@ -1,0 +1,27 @@
+.facebook{
+    border:none;
+    border-top: 4px solid #188ff3;
+}
+.twitter{
+    border:none;
+    border-top: 4px solid #1da2ef;
+}
+.instagram{
+border-radius: 6px;
+border-image: linear-gradient(to right, #fab86c, #e4688a) 10;
+border-width: 4px;
+border-style: solid;
+border-left: none;
+border-bottom: none;
+border-right: none;
+}
+.youtube{
+    border:none;
+    border-top: 4px solid #c4042d;
+}
+.text-red{
+    color:#c84a55
+}
+.text-green{
+    color:#60c7ac
+}
