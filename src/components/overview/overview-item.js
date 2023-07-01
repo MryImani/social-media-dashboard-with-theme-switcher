@@ -5,8 +5,8 @@ export default function OverviewItem(props) {
     <div
       className={
         theme === "dark"
-          ? "bg-dark-item flex flex-col  justify-evenly rounded-md p-8 "
-          : "flex flex-col  justify-evenly bg-light-item rounded-md p-8 "
+          ? "bg-dark-item flex flex-col  justify-evenly rounded-md p-8 hover:bg-dark-item-hover"
+          : "flex flex-col  justify-evenly bg-light-item rounded-md p-8 hover:bg-light-item-hover "
       }
     >
       <div className="flex items-center justify-between">

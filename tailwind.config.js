@@ -31,6 +31,8 @@ module.exports = {
       "dark-header": "#20222f",
       "light-header": "#f8f9fe",
       "light-text": "#7c7e8a",
+      "light-item-hover": "#e1e3f0",
+      "dark-item-hover": "#333a56",
       facebook: "#188ff3",
       twitter: "#1da2ef",
       youtube: "#c4042d",

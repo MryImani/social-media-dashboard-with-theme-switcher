@@ -5,8 +5,8 @@ export default function SocialItem(props){
       <div
         className={
           theme === "dark"
-            ? `${item.name} flex flex-col items-center justify-evenly bg-dark-item rounded-md py-8 px-16 `
-            : `${item.name} flex flex-col items-center justify-evenly bg-light-item rounded-md py-8 px-16 `
+            ? `${item.name} flex flex-col items-center justify-evenly bg-dark-item rounded-md py-8 px-16 hover:bg-dark-item-hover`
+            : `${item.name} flex flex-col items-center justify-evenly bg-light-item rounded-md py-8 px-16 hover:bg-light-item-hover `
         }
       >
         <div className="flex items-center">
