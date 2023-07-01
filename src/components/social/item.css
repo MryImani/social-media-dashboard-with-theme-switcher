@@ -6,9 +6,24 @@
     border:none;
     border-top: 4px solid #1da2ef;
 }
-.instagram{
-border-radius: 6px;
-border-image: linear-gradient(to right, #fab86c, #e4688a) 10;
+.instagram.dark{
+ border:8px solid #0000;
+  border-radius:10px;
+  background:
+linear-gradient(#252b43,#252b43) padding-box,
+linear-gradient(to right, #fab86c, #e4688a) border-box;
+border-width: 4px;
+border-style: solid;
+border-left: none;
+border-bottom: none;
+border-right: none;
+}
+.instagram.light{
+ border:8px solid #0000;
+  border-radius:10px;
+  background:
+linear-gradient(#f0f3fa,#f0f3fa) padding-box,
+linear-gradient(to right, #fab86c, #e4688a) border-box;
 border-width: 4px;
 border-style: solid;
 border-left: none;
