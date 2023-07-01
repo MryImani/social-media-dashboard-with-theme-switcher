@@ -9,8 +9,8 @@ export default function ToggleButton(props){
      }
     }
     return (
-      <div class="flex items-center justify-center">
-        <label for="toggleB" class="flex items-center cursor-pointer ">
+      <div class="w-full md:flex md:items-center md:justify-end md:w-72">
+        <label for="toggleB" class="flex items-center cursor-pointer  justify-between px-9 py-4 md:justify-center md:px-0 md:py-0">
           <p className=" text-gray-light-2 font-semibold mr-4">Dark Mode</p>
           <div class="relative ">
             <input type="checkbox" id="toggleB" class="sr-only" onChange={changeHandler}/>

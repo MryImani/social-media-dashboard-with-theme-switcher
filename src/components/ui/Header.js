@@ -8,11 +8,17 @@ export default function Header(props){
       <header
         className={
           theme === "dark"
-            ? "px-48 pt-8 pb-44 bg-gray-dark flex justify-between items-center"
-            : "px-48 pt-8 pb-44 bg-light-header flex justify-between items-center"
+            ? "md:px-48 pt-8 pb-24 md:pb-44 bg-gray-dark flex flex-col md:flex-row justify-between items-center"
+            : "md:px-48 pt-8 pb-24 md:pb-44 bg-light-header flex flex-col md:flex-row justify-between items-center"
         }
       >
-        <div>
+        <div
+          className={
+            theme === "dark"
+              ? "border-b-2 border-b-gray-light-2 pb-6 md:border-0 md:pb-0"
+              : "border-b-2 border-b-gray-2 pb-6 md:border-0 md:pb-0"
+          }
+        >
           <h1
             className={
               theme === "dark"
