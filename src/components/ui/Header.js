@@ -8,22 +8,22 @@ export default function Header(props){
       <header
         className={
           theme === "dark"
-            ? "md:px-48 pt-8 pb-24 md:pb-44 bg-gray-dark flex flex-col md:flex-row justify-between items-center"
-            : "md:px-48 pt-8 pb-24 md:pb-44 bg-light-header flex flex-col md:flex-row justify-between items-center"
+            ? "px-4 xl:px-48 pt-8 pb-24 md:pb-44 bg-gray-dark flex flex-col md:flex-row justify-between items-center"
+            : "px-4 xl:px-48 pt-8 pb-24 md:pb-44 bg-light-header flex flex-col md:flex-row justify-between items-center"
         }
       >
         <div
           className={
             theme === "dark"
-              ? "border-b-2 border-b-gray-light-2 pb-6 md:border-0 md:pb-0"
-              : "border-b-2 border-b-gray-2 pb-6 md:border-0 md:pb-0"
+              ? "w-full border-b-2 border-b-gray-light-2 pb-6 md:border-0 md:pb-0 md:px-0 md:w-fit"
+              : "w-full border-b-2 border-b-gray-2 pb-6 md:border-0 md:pb-0 md:px-0 md:w-fit"
           }
         >
           <h1
             className={
               theme === "dark"
-                ? " font-bold font-inter text-3xl text-white"
-                : " font-bold font-inter text-3xl"
+                ? " font-bold font-inter text-xl xl:text-3xl text-white"
+                : " font-bold font-inter text-xl xl:text-3xl"
             }
           >
             Social Media Dashboard

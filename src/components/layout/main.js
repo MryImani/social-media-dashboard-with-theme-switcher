@@ -135,7 +135,13 @@ export default function Main(props) {
         setLightTheme={setLightTheme}
         theme={theme}
       />
-      <div className={theme === "dark" ? "bg-dark-bg px-4 md:px-48 md:pb-24" : "px-4 md:px-48 md:pb-24 md:relative"}>
+      <div
+        className={
+          theme === "dark"
+            ? "bg-dark-bg px-4 xl:px-48 md:pb-24"
+            : "px-4  xl:px-48 md:pb-24 md:relative"
+        }
+      >
         <SocialList items={socialList} theme={theme} />
         <OverviewList items={overviewList} theme={theme} />
       </div>
